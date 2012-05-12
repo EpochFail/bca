@@ -1,4 +1,12 @@
 Bca::Application.routes.draw do
+  devise_for :cyclists
+
+  resources :teams
+
+  resources :business_sizes
+
+  resources :competitions
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
